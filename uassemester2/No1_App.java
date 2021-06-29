@@ -1,25 +1,41 @@
-package Tugas7;
-public class No1_App {
-    public static void main(String[] args){
-                No1 antrian = new No1(9);
-                antrian.queue(9);
-                antrian.display();
-                antrian.queue(8);
-                antrian.display();
-               
-               
-            
-                System.out.println("yang diambil dari antrian = "+ antrian.queue());
-                System.out.println("nama saya muhamad ilham nur habibie");
-                antrian.display();
-                
-             
-                antrian.queue(9);
-                antrian.display();
-                antrian.queue(8);
-                antrian.display();
-                
-                System.out.println("nilai yang paling depan = "+ antrian.queue());
-    }    
-}
 
+package Tugas8;
+public class No1_App {
+    public static void main(String[] args) {  
+        No1 tree = new No1();
+    
+        No1_Node node;
+    
+        node = new No1_Node('D');
+        tree.insert(node);
+    
+        node = new No1_Node('B');
+        tree.insert(node);
+    
+        node = new No1_Node('A');
+        tree.insert(node);
+    
+        node = new No1_Node('C');
+        tree.insert(node);
+    
+        node = new No1_Node('F');
+        tree.insert(node);
+    
+        node = new No1_Node('E');
+        tree.insert(node);
+    
+        node = new No1_Node('G');
+        tree.insert(node);
+    
+        System.out.print("Traversal dengan preorder : ");
+        tree.preOrder();
+        System.out.print("\nTraversal dengan postorder : ");
+        tree.postOrder();
+        System.out.print("\nTraversal dengan inorder : ");
+        tree.inOrder();
+        System.out.println();
+        
+        System.out.println("");
+        System.out.println("Muhamad Ilham Nur Habibie W");
+    }   
+}
